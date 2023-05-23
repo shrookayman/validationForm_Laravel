@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+.cntcontact{
+    width: 50%;
+    margin:auto;
+}
+.cntcontact i{
+    color: #9b59b6;
+}
+.div2{
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.div3{
+    text-align: center;
+    background-color: rgb(18, 27, 31);
+    padding: 50px;
+}
+.lnkcnt i{
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+.lnkcnt i:hover{
+    color: #a973be;
+}
+.div3 p{
+    color: white;
+    display: inline;
+}
+.div3 a{
+    text-decoration: none;
+    color: #a973be;
+}
+.div3 a:hover{
+    text-decoration:underline;
+}
+.lnkcnt{
+    margin-bottom: 20px;
+}

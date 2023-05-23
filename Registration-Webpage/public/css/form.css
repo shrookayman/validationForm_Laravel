@@ -1,0 +1,256 @@
+body {
+    background: linear-gradient(120deg, #a973be, #71b7e6);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60% 40%;
+}
+
+.group {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: rgb(0, 0, 0) -3px 2px 20px -9px;
+    padding: 0px 20px;
+    margin-top: 80px;
+    /* box-shadow: -5px 2px 54px -9px rgba(138, 134, 134, 0.911); */
+}
+
+.form {
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 8%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px;
+    border-style: ridge;
+    border-color: #ccc;
+    width: 75%;
+}
+
+span{
+    color: red;
+}
+
+h1 {
+    padding: 40px 30px 0px;
+}
+
+.no-bg {
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgb(158, 158, 158);
+    opacity: 1;
+    /* Firefox */
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+}
+
+#submitB,
+.actors {
+    width: 25%;
+    border: 2px solid linear-gradient(135deg, #71b7e6, #a973be);
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 15px;
+}
+
+#submitB:hover,
+.actors:hover {
+    color: white;
+    background: linear-gradient(135deg, #71b7e6, #a973be);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(38, 158, 158);
+}
+
+p {
+    color: rgb(0, 0, 0);
+    padding-bottom: 30px;
+    font-size: medium;
+}
+
+p a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+p a:hover {
+    color: linear-gradient(135deg, #71b7e6, #a973be)
+}
+
+#name-error,
+#fields-error,
+#pass-error,
+#cpass-error,
+#email-error,
+#phone-error {
+    color: red;
+    font-size: medium;
+}
+
+#fields-error{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.actor {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 6px 6px;
+    margin-left: 50px;
+}
+
+.actors {
+    background-color: #ffffff;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-top: 11%;
+    border-radius: 8px;
+}
+
+.get-actors {
+    margin-top: 6%;
+    width: 751px;
+    height: 937px;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-left: 50px;
+}
+
+.actor-card {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.actor-card img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+h2 {
+    color: black;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.actor-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 0 0 10px;
+    height: 0;
+}
+
+.imdb-link {
+    color: #00dddd;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#popup {
+    margin-right: 50px;
+    margin-top: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 25%;
+    background-color: rgba(22, 22, 22, 0.5);
+    background: #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: 'none';
+}
+
+#popup-container{
+    position:fixed;
+    z-index:999;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.75);
+}
+
+#popup-message {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    color: black;
+}
+
+#okDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#okBtn {
+    width: 25%;
+    height: 20%;
+    font-size: 17px;
+    border-radius: 8px;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #71b7e6, #a973be);
+}
